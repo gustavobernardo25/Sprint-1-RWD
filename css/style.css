@@ -7,7 +7,7 @@ header{
 }
 .wrapper{
     display: grid;
-    grid-template-columns: 200px 200px 200px 290px;
+    grid-template-columns: 20vw 20vw 20vw 40vw;
 }
 .titulo{
     font-size: 25px;
@@ -48,16 +48,21 @@ ul {
     border: 1px solid black;
   }
 #imagepag{
-    width: 325px;
-    height: 318px;
-    margin-left: 450px;
+    max-width: 100%;
+    width: 325px;  
+    max-height: 100%;
+    height: 280px;
+    position: absolute;
+    top: 16vh;
+    left: 4.5vw;
+ 
   }
 #div-txt-pag{
     position: absolute;
-    left: 9.35%;
-    right: 9.49%;
-    top: 30.71%;
-    bottom: 8.05%;
+    top: 35vh;
+    left: 30vw;
+    bottom: 5vh;
+    /* right: 20vw; */
     padding: 15px;
     background: #AEAEAE;
     border: 1px solid black;
