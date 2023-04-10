@@ -1,74 +1,100 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
 }
-header{
+
+header {
     background-color: #3F3C3C;
     margin: 0;
 }
-.wrapper{
-    display: grid;
-    grid-template-columns: 20vw 20vw 20vw 40vw;
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
 }
-.titulo{
-    font-size: 25px;
+
+
+#titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ED185C;
+    padding: 1vw;
+}
+
+.wrapper>h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #ED185C;
 }
-.content{
+
+.content {
     display: flex;
     background-image: url("../images/images-fundo.jpeg");
     height: 79vh;
     filter: blur(8px);
 }
-p{
- 
+
+p {
+
     font-family: Arial, Helvetica, sans-serif;
     color: #ED185C;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    padding: 5px;
-    position: bottom;
-    top: 90px;
-    left: 50px;
     position: relative;
-  }
-.div-txt1{
-/* Rectangle 3 */
+}
+
+.div-txt1 {
+    /* Rectangle 3 */
     position: absolute;
-    left: 34.39%;
-    right: 34.53%;
-    top: 30.71%;
-    bottom: 8.05%;
-    padding: 15px;
-    background: #AEAEAE;
-    border: 1px solid black;
-  }
-#imagepag{
-    max-width: 100%;
-    width: 325px;  
-    max-height: 100%;
-    height: 280px;
-    position: absolute;
-    top: 16vh;
-    left: 4.5vw;
- 
-  }
-#div-txt-pag{
-    position: absolute;
-    top: 35vh;
-    left: 30vw;
-    bottom: 5vh;
-    /* right: 20vw; */
+    top: 35%;
+    left: 30%;
+    right: 20%;
     padding: 15px;
     background: #AEAEAE;
     border: 1px solid black;
 }
 
-.paragrafo{
+#imagepag {
+    max-width: 100%;
+    width: 325px;
+    max-height: 100%;
+    height: 280px;
+    margin: 1%;
+    /* position: absolute;
+    top: 16vh;
+    left: 4.5vw; */
+
+}
+
+#div-txt-pag {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    right: 20%;
+    /* right: 20vw; */
+    padding: 15px;
+    background: #AEAEAE;
+    border: 1px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.paragrafo {
     font-family: 'Alatsi';
     font-style: normal;
     font-weight: 400;
@@ -78,16 +104,14 @@ ul {
     color: #000000;
 }
 
-a{
+a {
     text-decoration: none;
     color: aliceblue;
 }
-li{
+
+li {
     display: inline;
     position: relative;
     margin-left: 25px;
     color: aliceblue;
-}
-.navigation-div{
-    justify-content: center;
 }
